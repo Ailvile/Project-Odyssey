@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network & Hardware | Project Odyssey</title>
+  <meta name="description" content="Project Odyssey — New Jane Furse Memorial Hospital, Sekhukhune District, Limpopo.">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- ===== TOP NAVIGATION ===== -->
+  <header class="topbar">
+    <div class="wrap topbar-in">
+
+      <a class="brand" href="index.html">
+        <span class="mark">◉</span>
+        <div>
+          <strong>PROJECT ODYSSEY</strong>
+          <small>Sekhukhune District Municipality</small>
+        </div>
+      </a>
+
+      <nav aria-label="Main">
+            <a class="" href="story.html">Story</a>
+            <a class="" href="solution.html">Solution</a>
+            <a class="nav-active" href="network.html">Network</a>
+            <a class="" href="security.html">Security</a>
+            <a class="" href="plan.html">Plan</a>
+            <a class="" href="budget.html">Budget</a>
+            <a class="" href="people.html">People</a>
+      </nav>
+
+      <a class="btn small" href="budget.html">See the budget →</a>
+
+    </div>
+  </header>
+
+  <!-- ===== PAGE CONTENT ===== -->
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap">
+        <p class="breadcrumb">03 — Network & Hardware</p>
+        <h1>Enterprise-grade, standardised,<br>ready for the wards.</h1>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 18px;">
+      <div class="wrap">
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Layer</th>
+                <th>Device</th>
+                <th>Key spec</th>
+                <th>Qty</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Core</td>
+                <td>Cisco Catalyst C9500 / HPE Aruba 6400 equiv.</td>
+                <td>Layer 3, 24× 10G SFP+, redundant PSU, HA pair</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Distribution</td>
+                <td>48-port PoE+ managed switch</td>
+                <td>740W PoE, 4× 10G uplink</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Access</td>
+                <td>24-port PoE+ managed switch</td>
+                <td>370W PoE, 1 Gbps, 802.1X</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Wireless</td>
+                <td>Wi-Fi 6 APs, cloud-managed</td>
+                <td>802.11ax, WPA3, 2.5 Gbps</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>Servers</td>
+                <td>Dell PowerEdge R750 / HPE DL380 Gen11</td>
+                <td>2× Xeon Silver 16-core, 128GB RAM, NVMe vSAN</td>
+                <td>2 hosts</td>
+              </tr>
+              <tr>
+                <td>Power</td>
+                <td>5× 3kVA online double-conversion UPS</td>
+                <td>2-hour runtime, SNMP • + 10kW solar PV</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="sub">VLAN segmentation — one physical network, seven logical zones</h3>
+
+        <div class="vlan">
+          <div><b>VLAN 10</b><span>Clinical Data — EHR, devices, PACS • Highest QoS</span></div>
+          <div><b>VLAN 20</b><span>Administrative — PCs, printers, finance, HR</span></div>
+          <div><b>VLAN 30</b><span>Voice — VoIP phones (future)</span></div>
+          <div><b>VLAN 40</b><span>Staff BYOD / Secure Wireless</span></div>
+          <div><b>VLAN 50</b><span>Building Mgmt — CCTV, nurse call, access control</span></div>
+          <div><b>VLAN 70</b><span>Guest / Patient Wi-Fi — internet only, captive portal</span></div>
+          <div><b>VLAN 80</b><span>Management — switches, APs, UPS</span></div>
+        </div>
+
+        <div class="grid3 mini">
+          <article class="card">
+            <h3>Workstations</h3>
+            <p><strong>35 clinical</strong> + <strong>20 admin</strong> + <strong>10 thin clients</strong>. Core i5 13th Gen, 16GB RAM, 512GB NVMe, Windows 11 Pro.</p>
+          </article>
+
+          <article class="card">
+            <h3>Printing</h3>
+            <p><strong>12 laser MFPs</strong> — secure print, PIN release, scan-to-EHR.</p>
+          </article>
+
+          <article class="card">
+            <h3>Storage &amp; backup</h3>
+            <p>20TB usable vSAN + 36TB Synology NAS. Daily backups, <strong>3-2-1 rule</strong>, offsite to <strong>Azure Blob (SA North)</strong>.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ===== PREVIOUS / NEXT ===== -->
+    <div class="wrap">
+      <div class="pager">
+        <a href="solution.html">← The Solution</a>
+        <a href="security.html">Security →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="wrap">
+      <span>Project Odyssey • New Jane Furse Memorial Hospital</span>
+      <span>Sekhukhune District, Limpopo</span>
+    </div>
+  </footer>
+
+</body>
+</html>
